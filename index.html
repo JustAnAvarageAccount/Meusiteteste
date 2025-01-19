@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail Funcional do YouTube</title>
+  <style>
+    .thumbnail-container {
+      width: 320px;
+      height: 180px;
+      position: relative;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .thumbnail-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Link para o vídeo do YouTube -->
+  <a href="https://youtu.be/o8QfhoOXuu8?si=r9KWahm7QcTd9c4i" target="_blank">
+    <div class="thumbnail-container">
+      <!-- Thumbnail do vídeo do YouTube -->
+      <img src="mqdefault_6s.webp" alt="Thumbnail do YouTube">
+      <!-- Ícone de Play -->
+      <div class="play-button">&#9654;</div>
+    </div>
+  </a>
+
+</body>
+</html>
